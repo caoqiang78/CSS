@@ -1,0 +1,17 @@
+syntax: nth-child(an + b)   nth-of-type(an + b)
+        a is a number
+        b is a number
+        also can use: even and odd
+
+<div>
+  <h1> navList </h1>
+  <p> first </p>
+  <p> second </p>
+  <p> third> </p>
+</div>
+
+For p:nth-child(2), it must satify (1) this should be <div>'s second child; and (2) this element must be <p>, 
+    so the final selection is <p> first </p>;
+
+For p:nth-of-type(2), from the sematic, it is nth of "type", so it should satisfy the second <p> element,
+    so the final selection is <p> second </p>;
